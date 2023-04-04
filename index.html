@@ -68,7 +68,7 @@
                 <h4 class="text-center px-6">¿QUIÉNES SOMOS?</h4><hr>
                 <div class="row">
                     <div class="col-4">
-                        <div class="bg-info text-center"><i class="fs-5 fa-solid fa-plane"></i></div>
+                        <div type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Vuelos" class="bg-info text-center"><i class="fs-5 fa-solid fa-plane"></i></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto labore eum sunt numquam delectus commodi dolorum aliquam eveniet, adipisci magni maxime, doloribus recusandae excepturi minus. Sed reprehenderit sapiente quas assumenda.
                             <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis sunt nostrum maiores officiis id dolore pariatur sed tempore, provident exercitationem quasi ipsa eius ipsum quia aut dolorum reiciendis obcaecati cum! -->
                             <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda harum architecto eum quisquam eveniet, ad ut saepe blanditiis! Ratione reiciendis voluptatum perferendis placeat beatae quisquam saepe sunt minima cupiditate incidunt. -->
@@ -79,10 +79,10 @@
                             <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint quos amet! Natus dolore libero rem magni et. Accusamus dolores alias ipsa vel consequatur voluptatem labore, iste libero magni inventore! -->
                             <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione est itaque obcaecati corporis, iusto, deleniti fugit magnam illum possimus ad, maxime tempora. Rerum quo vitae sed sit? Dolor, doloremque exercitationem! -->
                         </p>
-                        <div class="bg-info text-center"><i class="fs-5 fa-solid fa-mountain"></i></div>
+                        <div type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Lugares" class="bg-info text-center"><i class="fs-5 fa-solid fa-mountain"></i></div>
                     </div>
                     <div class="col-4">
-                        <div class="bg-info text-center"><i class="fs-5 fa-solid fa-route"></i></div>
+                        <div type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Rutas" class="bg-info text-center"><i class="fs-5 fa-solid fa-route"></i></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto labore eum sunt numquam delectus commodi dolorum aliquam eveniet, adipisci magni maxime, doloribus recusandae excepturi minus. Sed reprehenderit sapiente quas assumenda.
                             <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea non excepturi vero voluptatibus repudiandae quibusdam obcaecati sed, odit iusto qui. Odio pariatur sed eum ducimus delectus maxime voluptate tempore inventore. -->
                             <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque iure beatae quae voluptatum optio fuga exercitationem itaque illum accusantium expedita minus nesciunt quo in omnis repudiandae, error distinctio, voluptates voluptas. -->
@@ -181,5 +181,11 @@
 <!-- BootstrapJS & FontAwesome -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/cdnFontAwesome.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 </html>
