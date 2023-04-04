@@ -21,7 +21,7 @@
 </head>
 <body class="bg-dark">
 <!-- NavBar -->
-    <nav class="navbar px-6 navbar-expand-lg fixed-top navbar-dark">
+    <nav id="negro" class="navbar px-6 navbar-expand-lg fixed-top navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="assets/img/viajes.svg" alt="logo de avion" height="25"> Viajes Chile</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +29,10 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav d-flex">
-                    <a class="nav-link active" href="#inicio">Inicio</a>
-                    <a class="nav-link active" href="#quienesSomos">Quienes somos</a>
-                    <a class="nav-link active" href="#destacados">Destacados</a>
-                    <a class="nav-link active" href="#contacto">Contacto</a>
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                    <a class="nav-link" href="#quienesSomos">Quienes somos</a>
+                    <a class="nav-link" href="#destacados">Destacados</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </div>
             </div>
         </div>
@@ -187,6 +187,15 @@
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
+    </script>
+    <script>
+        $(window).scroll(function() {
+            if ($('#negro').offset().top > 40) {
+                $('#negro').addClass("bg-dark");
+            } else {
+                $("#negro").removeClass("bg-dark");
+            }
+        });
     </script>
 </body>
 </html>
