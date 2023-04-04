@@ -1,0 +1,32 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+p{
+    font-weight: 100;
+}
+.px-6{
+    padding: 10px 8%;
+}
+.px-7{
+    padding: 20px 15%;
+}
+section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.fa-solid{
+    padding: 5px;
+}
+.bg-dark{
+    background-color: black !important;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color: white;
+}
+a{
+    color: white;
+}
